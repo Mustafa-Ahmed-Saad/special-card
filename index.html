@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>card</title>
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="card">
+            <img src="./images/h.jfif" alt="card" />
+            <div class="card-body">
+               <div class="card-title">Glassmorphism</div>
+               <div class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quod cum unde eveniet. Dicta voluptates in laborum quasi ea quidem.</div>
+               <div class="read-more"><a href="3">Read More</a></div>
+            </div>
+         </div>
+      </div>
+      <!-- vanilla tilt js cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.min.js" integrity="sha512-xTXLkWCanTzPE4g+vyMXdJ1MYKwuhdJqxNfPDE8sHnwwHBXTZY0VNWBiCRiDtGEtLzmLkK5GCSXshPCP2kt8Ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- run vanilla tilt js -->
+      <script type="text/javascript">
+         // هيطبق المكتبة و الانيميشن علي اول عنصر واخد الكلاس كارد و لو عاوز اطبقها علي كل العناصر اللي واخدة كلاس كارد مش عنصر واحد بستخدم الكويري سلسكتور اول بدل كويري سيليكتور بس
+         VanillaTilt.init(document.querySelector('.card'), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.7,
+         });
+
+         //It also supports NodeList
+         // يعني دا لو انا عاوز اعمل التاثير دا علي كذا عنصر واخدين الكلاس دا
+         // VanillaTilt.init(document.querySelectorAll('.your-element'));
+      </script>
+   </body>
+</html>
